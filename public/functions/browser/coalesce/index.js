@@ -7,9 +7,9 @@ export const coalesce = () => ({
     types: ['datatable'],
   },
   args: {
-    _: {
+    column: {
       types: ['string'],
-      aliases: ['column', 'c'],
+      aliases: ['_', 'c'],
       help: 'The name of the column value to read',
       multi: true,
     },
@@ -27,7 +27,7 @@ export const coalesce = () => ({
     },
   },
   fn: (context, args) => {
-    const columns = args._ || [];
+    const columns = args.column || [];
     let value = args.default;
     const row = context.rows[args.row];
 

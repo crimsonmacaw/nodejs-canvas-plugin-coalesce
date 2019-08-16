@@ -1,5 +1,5 @@
 import { coalesce } from './coalesce';
 
-export const commonFunctions = [
+export const browserFunctions = [
   coalesce
 ];
