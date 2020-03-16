@@ -4,7 +4,7 @@
   "description": "a plugin for canvas for working with datatables",
   "main": "index.js",
   "kibana": {
-    "version": "7.3.1",
+    "version": "7.5.0",
     "templateVersion": "1.0.0"
   },
   "scripts": {
